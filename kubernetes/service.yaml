@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bookingView
+  labels:
+    app: bookingView
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: bookingView
