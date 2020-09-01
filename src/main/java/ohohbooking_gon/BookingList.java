@@ -14,12 +14,12 @@ public class BookingList {
         private Long confirmId;
         private String bookingUserId;
         private String bookingDtm;
-        private String roomId;
+        private Long roomId;
         private String useStartDtm;
         private String useEndDtm;
         private String confirmStatus;
         private String confirmUserId;
-        private Date confirmDtm;
+        private String confirmDtm;
 
 
         public Long getId() {
@@ -57,11 +57,11 @@ public class BookingList {
         public void setBookingDtm(String bookingDtm) {
             this.bookingDtm = bookingDtm;
         }
-        public String getRoomId() {
+        public Long getRoomId() {
             return roomId;
         }
 
-        public void setRoomId(String roomId) {
+        public void setRoomId(Long roomId) {
             this.roomId = roomId;
         }
         public String getUseStartDtm() {
@@ -92,11 +92,11 @@ public class BookingList {
         public void setConfirmUserId(String confirmUserId) {
             this.confirmUserId = confirmUserId;
         }
-        public Date getConfirmDtm() {
+        public String getConfirmDtm() {
             return confirmDtm;
         }
 
-        public void setConfirmDtm(Date confirmDtm) {
+        public void setConfirmDtm(String confirmDtm) {
             this.confirmDtm = confirmDtm;
         }
 

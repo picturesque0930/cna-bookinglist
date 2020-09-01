@@ -43,10 +43,10 @@ public class BookingListViewHandler {
         try {
             if (confirmCompleted.isMe()) {
                 // view 객체 조회
-                List<BookingList> bookingListList = bookingListRepository.findByBookingId(confirmCompleted.getBookingId());
+                List<BookingList> bookingListList = bookingListRepository.findByBookingId(confirmCompleted.getId());
                 for(BookingList bookingList : bookingListList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    bookingList.setConfirmId(confirmCompleted.getConfirmUserId());
+                    // bookingList.setConfirmId(confirmCompleted.getConfirmUserId());
                     bookingList.setConfirmStatus(confirmCompleted.getStatus());
                     bookingList.setConfirmUserId(confirmCompleted.getConfirmUserId());
                     bookingList.setConfirmDtm(confirmCompleted.getConfirmDtm());

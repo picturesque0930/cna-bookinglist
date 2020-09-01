@@ -8,7 +8,6 @@ import java.util.List;
 public interface BookingListRepository extends CrudRepository<BookingList, Long> {
 
     List<BookingList> findByBookingId(Long bookingId);
-    List<BookingList> findByBookingId(Long bookingId);
-
+    
         void deleteByBookingId(Long bookingId);
 }
