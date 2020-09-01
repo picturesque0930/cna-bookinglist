@@ -7,6 +7,8 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,16 +26,6 @@ public class BookingListViewHandler {
                 // view 객체 생성
                 BookingList bookingList = new BookingList();
 
-
-//                private Long id;
-//                private Long bookingId;
-//                private Long confirmId;
-//                private String bookingUserId;
-//                private String bookingDtm;
-//                private Long roomId;
-//                private String useStartDtm;
-//                private String useEndDtm;
-//                private String confirmStatus;
 //                private String confirmUserId;
 //                private String confirmDtm;
 
