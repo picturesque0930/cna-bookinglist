@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bookingView
+  name: bookinglist
   labels:
-    app: bookingView
+    app: bookinglist
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bookingView
+      app: bookinglist
   template:
     metadata:
       labels:
-        app: bookingView
+        app: bookinglist
     spec:
       containers:
-        - name: bookingView
-          image: username/bookingView:latest
+        - name: bookinglist
+          image: 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/team-e-bookinglist:lastest
           ports:
             - containerPort: 8080
           readinessProbe:
