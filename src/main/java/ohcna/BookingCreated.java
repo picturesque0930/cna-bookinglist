@@ -1,6 +1,6 @@
-package ohohbooking_gon;
+package ohcna;
 
-public class BookingCanceled extends AbstractEvent {
+public class BookingCreated extends AbstractEvent {
 
     private Long id;
     private Long roomId;

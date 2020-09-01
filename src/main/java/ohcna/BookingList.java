@@ -1,4 +1,4 @@
-package ohohbooking_gon;
+package ohcna;
 
 import javax.persistence.*;
 import java.util.List;

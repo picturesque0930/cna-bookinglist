@@ -1,6 +1,6 @@
-package ohohbooking_gon;
+package ohcna;
 
-import ohohbooking_gon.config.kafka.KafkaProcessor;
+import ohcna.config.kafka.KafkaProcessor;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;

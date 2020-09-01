@@ -1,4 +1,4 @@
-package ohohbooking_gon;
+package ohcna;
 
 public class BookingChanged extends AbstractEvent {
 
