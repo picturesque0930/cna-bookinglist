@@ -30,6 +30,7 @@ public class BookingListViewHandler {
                 bookingList.setUseEndDtm(bookingCreated.getUseEndDtm());
                 bookingList.setBookingUserId(bookingCreated.getBookingUserId());
                 // view 레파지 토리에 save
+                System.out.println("BookingList Create");
                 bookingListRepository.save(bookingList);
             }
         }catch (Exception e){
