@@ -23,12 +23,28 @@ public class BookingListViewHandler {
             if (bookingCreated.isMe()) {
                 // view 객체 생성
                 BookingList bookingList = new BookingList();
+
+
+//                private Long id;
+//                private Long bookingId;
+//                private Long confirmId;
+//                private String bookingUserId;
+//                private String bookingDtm;
+//                private Long roomId;
+//                private String useStartDtm;
+//                private String useEndDtm;
+//                private String confirmStatus;
+//                private String confirmUserId;
+//                private String confirmDtm;
+
+                String nowDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
                 // view 객체에 이벤트의 Value 를 set 함
                 bookingList.setBookingId(bookingCreated.getId());
                 bookingList.setRoomId(bookingCreated.getRoomId());
                 bookingList.setUseStartDtm(bookingCreated.getUseStartDtm());
                 bookingList.setUseEndDtm(bookingCreated.getUseEndDtm());
                 bookingList.setBookingUserId(bookingCreated.getBookingUserId());
+                bookingList.setBookingDtm(nowDate);
                 // view 레파지 토리에 save
                 System.out.println("BookingList Create");
                 bookingListRepository.save(bookingList);
@@ -50,7 +66,8 @@ public class BookingListViewHandler {
                     // bookingList.setConfirmId(confirmCompleted.getConfirmUserId());
                     bookingList.setConfirmStatus(confirmCompleted.getStatus());
                     bookingList.setConfirmUserId(confirmCompleted.getConfirmUserId());
-                    bookingList.setConfirmDtm(confirmCompleted.getConfirmDtm());
+                    String nowDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+                    bookingList.setConfirmDtm(nowDate);
                     // view 레파지 토리에 save
                     bookingListRepository.save(bookingList);
                 }
